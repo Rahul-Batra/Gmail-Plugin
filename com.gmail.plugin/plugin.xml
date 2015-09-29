@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            description="this is gmail"
+            id="com.myplugin.rmp.workbenchActionSet"
+            label="Gmail project">
+         <menu
+               id="com.myplugin.rmp.workbenchMenu"
+               label="Gmail"
+               path="additions">
+            <groupMarker
+                  name="content">
+            </groupMarker>
+            <separator
+                  name="additions">
+            </separator>
+         </menu>
+         <action
+               class="OpenDssViewActionDelegate"
+               icon="icons/sample.gif"
+               id="com.myplugin.rmp.openDSSView"
+               label="Open&amp; DSS View"
+               menubarPath="com.myplugin.rmp.workbenchMenu/content"
+               style="push"
+               toolbarPath="Normal/additions">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

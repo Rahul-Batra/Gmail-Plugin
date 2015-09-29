@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: first
+Bundle-SymbolicName: com.gmail.plugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: first.jar,
+ PA/jasminclasses-2.5.0.jar,
+ PA/polyglotclasses-1.3.5.jar,
+ PA/sootclasses-2.5.0.jar
+Export-Package: .
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.e4.ui.workbench.addons.swt;bundle-version="0.10.3",
+ org.eclipse.osgi;bundle-version="3.8.2",
+ org.eclipse.equinox.launcher;bundle-version="1.3.0"

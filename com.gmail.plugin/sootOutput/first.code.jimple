@@ -1,0 +1,12 @@
+public class first.code extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        first.code this;
+
+        this := @this: first.code;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}
