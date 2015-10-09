@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
+import java.io.Console;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.Collection;
 
 import org.jivesoftware.smack.Chat;
@@ -129,6 +131,8 @@ public class GtalkConsole implements MessageListener
         String username = reader.readLine();
         System.out.print("Enter your password: ");
         String pass = reader.readLine();
+        // To make password invisible use below string and run the program in terminal or command prompt, not in IDE
+        // String pass = new String(System.console().readPassword());
     	try{
     		i.LogIn(username, pass);
 		} catch(Exception e)
